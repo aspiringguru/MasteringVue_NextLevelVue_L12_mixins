@@ -11,6 +11,13 @@ Vue.use(Vuelidate)
 
 Vue.config.productionTip = false
 
+//example of global mixin.
+Vue.mixin({
+  mounted() {
+    console.log('I am  mixed into every component.')
+  }
+})
+
 const requireComponent = require.context(
   './components',
   false,
@@ -27,6 +34,7 @@ requireComponent.keys().forEach(fileName => {
   Vue.component(componentName, componentConfig.default || componentConfig)
 })
 
+//nb: global mixins need to go right above route Vue instance
 new Vue({
   router,
   store,

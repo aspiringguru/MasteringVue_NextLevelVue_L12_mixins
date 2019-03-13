@@ -66,3 +66,26 @@ To run the mock database
 | Reusable Form Components: BaseButton      | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/baseSelect-finish)         | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/baseButton-finish)                           |
 | Form Validation with Vuelidate            | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/baseButton-finish)         | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/form_validation1_finish)                     |
 | Form Validation with Vuelidate pt 2       | [Starting Code](https://github.com/Code-Pop/real-world-vue/releases/tag/form_validation1_finish)   | [Finished Code](https://github.com/Code-Pop/real-world-vue/releases/tag/vuelidateP2-finish)                          |
+
+### install and work notes
+
+```
+
+npm install -g json-server
+
+json-server --watch db.json
+#above = no delay
+json-server -d 1500 --watch db.json
+#above = 1.5 second delay
+
+npm install --save nprogress
+
+npm install vuelidate --save
+
+npm install
+yarn serve
+
+https://github.com/vuelidate/vuelidate
+
+
+```
