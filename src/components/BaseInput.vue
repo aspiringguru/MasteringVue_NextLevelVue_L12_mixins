@@ -7,7 +7,6 @@
 
 <script>
 import { formFieldMixin } from '../mixins/formFieldMixin'
-
 export default {
   mixins: [formFieldMixin],
   computed: {
